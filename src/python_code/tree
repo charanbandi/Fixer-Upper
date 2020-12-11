@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="AreaSpace_SQFT <= 2240.5\ngini = 0.998\nsamples = 80000\nvalue = [30, 54, 38 ... 2, 27, 1]", fillcolor="#ffffff"] ;
+1 [label="YearBuilt <= 2017.5\ngini = 0.997\nsamples = 42327\nvalue = [30, 51, 10 ... 0, 9, 0]", fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Bathrooms <= 1.875\ngini = 0.997\nsamples = 35155\nvalue = [30, 51, 10 ... 0, 5, 0]", fillcolor="#ffffff"] ;
+1 -> 2 ;
+3 [label="gini = 0.996\nsamples = 8153\nvalue = [23, 21, 5 ... 0, 0, 0]", fillcolor="#fffffe"] ;
+2 -> 3 ;
+4 [label="gini = 0.997\nsamples = 27002\nvalue = [7, 30, 5 ... 0, 5, 0]", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="Parking_2 spaces <= 0.5\ngini = 0.999\nsamples = 7172\nvalue = [0, 0, 0 ... 0, 4, 0]", fillcolor="#feffff"] ;
+1 -> 5 ;
+6 [label="gini = 0.998\nsamples = 3858\nvalue = [0, 0, 0 ... 0, 1, 0]", fillcolor="#feffff"] ;
+5 -> 6 ;
+7 [label="gini = 0.998\nsamples = 3314\nvalue = [0, 0, 0 ... 0, 3, 0]", fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label="AreaSpace_SQFT <= 3688.5\ngini = 0.998\nsamples = 37673\nvalue = [0, 3, 28 ... 2, 18, 1]", fillcolor="#ffffff"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="YearBuilt <= 2018.5\ngini = 0.998\nsamples = 26840\nvalue = [0, 3, 8 ... 1, 8, 1]", fillcolor="#ffffff"] ;
+8 -> 9 ;
+10 [label="gini = 0.997\nsamples = 20513\nvalue = [0, 3, 7 ... 0, 5, 1]", fillcolor="#ffffff"] ;
+9 -> 10 ;
+11 [label="gini = 0.999\nsamples = 6327\nvalue = [0, 0, 1 ... 1, 3, 0]", fillcolor="#ffffff"] ;
+9 -> 11 ;
+12 [label="AreaSpace_SQFT <= 4821.5\ngini = 0.998\nsamples = 10833\nvalue = [0, 0, 20 ... 1, 10, 0]", fillcolor="#ffffff"] ;
+8 -> 12 ;
+13 [label="gini = 0.998\nsamples = 6723\nvalue = [0, 0, 11 ... 1, 6, 0]", fillcolor="#ffffff"] ;
+12 -> 13 ;
+14 [label="gini = 0.997\nsamples = 4110\nvalue = [0, 0, 9 ... 0, 4, 0]", fillcolor="#ffffff"] ;
+12 -> 14 ;
+}
